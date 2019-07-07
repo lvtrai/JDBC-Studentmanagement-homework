@@ -1,4 +1,4 @@
-package vn.msita.studentmangement.dao;
+package vn.msita.studentmanagement.dao;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

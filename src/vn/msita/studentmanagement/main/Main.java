@@ -1,6 +1,6 @@
 package vn.msita.studentmanagement.main;
 
-import vn.msita.studentmangement.dao.StudentDAO;
+import vn.msita.studentmanagement.dao.StudentDAO;
 
 public class Main {
 
