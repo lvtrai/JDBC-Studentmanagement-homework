@@ -59,11 +59,11 @@ public class StudentDAO {
 		try {
 			connection = ConnectionFactory.getConnection();
 			statement = connection.createStatement();
-			resultSet = statement.executeQuery("SELECT COUNT(*) FROM student WHERE gender = 'Male'");
-			String CountMale = "";
+			resultSet = statement.executeQuery("SELECT COUNT(gender) FROM student WHERE gender = 'Male'");
+			//String CountMale = "";
 			while (resultSet.next()) {
-				CountMale = resultSet.getString(1);
-				System.out.println("Number of male students :" + CountMale+"\n");
+				//CountMale = resultSet.getString(1);
+				System.out.println("Number of male students :" + resultSet.getInt("COUNT(gender)")+"\n");
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
